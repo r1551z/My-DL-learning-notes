@@ -6,7 +6,9 @@ https://www.tensorflow.org/tutorials/images/hub_with_keras
 
 # Version info
 python 3.6.9
+
 tensorflow cpu 1.15.0-dev20190821
+
 
 # Error
 
