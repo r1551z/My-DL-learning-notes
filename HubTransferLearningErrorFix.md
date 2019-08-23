@@ -68,3 +68,13 @@ history = model.fit(image_data, epochs=2,
 #                     callbacks = [batch_stats_callback]
                    )
 ```
+
+# Reason
+The total number of pictures (3760) is not devisible by the batch size (32).
+Therefore the last batch has a smaller size (22) instead of 32. 
+
+# Solution:
+Instead of using model.fit, use model.fit_generator, the error then disappeared.
+
+# Yet to learn:
+The difference between model.fit and model.fit_generator
